@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OB-GYNE Services - CBH Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                        "text-light": "#0d1b12",
+                        "text-dark": "#e7f3eb",
+                        "subtle-light": "#4c9a66",
+                        "subtle-dark": "#a3d9b1",
+                        "border-light": "#e7f3eb",
+                        "border-dark": "#2a4b36"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill-opacity="0.5"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold">CBH Clinic</h2>
+</div>
+<nav class="hidden items-center gap-8 md:flex">
+<a class="text-sm font-medium transition-colors hover:text-primary" href="index.html">Home</a>
+<a class="text-sm font-bold text-primary" href="services.html">OB-GYNE Services</a>
+<a class="text-sm font-medium transition-colors hover:text-primary" href="ultrasound_services.html">Ultrasound Services</a>
+<a class="text-sm font-medium transition-colors hover:text-primary" href="vac_services.html">Vaccination Services</a>
+<a class="text-sm font-medium transition-colors hover:text-primary" href="booking.html">Book Appointment</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-text-light transition-opacity hover:opacity-90">
+<span class="truncate">Book Appointment</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto max-w-4xl px-4 py-12 md:py-20">
+<!-- PageHeading -->
+<div class="text-center">
+<h1 class="text-4xl font-black tracking-tighter sm:text-5xl">OB-GYNE Services</h1>
+</div>
+<!-- BodyText -->
+<div class="mt-4 text-center">
+<p class="mx-auto max-w-2xl text-base text-subtle-light dark:text-subtle-dark">
+                    At CBH Clinic, we are dedicated to providing comprehensive and compassionate healthcare for women at every stage of life. Our experienced team is here to support your health and wellness with personalized care.
+                </p>
+</div>
+<!-- Service List -->
+<div class="mt-12 space-y-4">
+<!-- Service Item: Prenatal Check-up -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">pregnancy</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Prenatal Check-up</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Comprehensive care and monitoring for a healthy pregnancy journey.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Pap Smear -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Pap Smear</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Essential screening for early detection of cervical health issues.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: High-Risk Pregnancy Care -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">monitor_heart</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">High-Risk Pregnancy Care</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Specialized support for complex pregnancies to ensure the best outcomes.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Gynecologic Consultation -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">stethoscope</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Gynecologic Consultation</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Expert diagnosis and treatment for a wide range of gynecological concerns.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Women’s Wellness Care -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">spa</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Women’s Wellness Care</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Proactive and preventive care focused on your long-term health and well-being.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Menopausal Care -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">elderly_woman</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Menopausal Care</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Guidance and support to help you navigate the changes of menopause.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Breast Consultation -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">breastfeeding</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Breast Consultation</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Thorough breast health evaluations and screenings for peace of mind.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+<!-- Service Item: Family Planning -->
+<div class="flex items-center justify-between gap-4 rounded-lg border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark p-4 transition-shadow hover:shadow-md">
+<div class="flex items-center gap-4">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">family_restroom</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-base font-medium">Family Planning</p>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Confidential counseling on contraception and fertility to plan your future.</p>
+</div>
+</div>
+<button class="hidden text-sm font-medium text-primary hover:underline sm:block">Learn More</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark">
+<div class="container mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-12 text-sm sm:grid-cols-2 md:grid-cols-4">
+<div class="flex flex-col items-start gap-3">
+<div class="flex items-center gap-2">
+<div class="size-5 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"></path>
+</svg>
+</div>
+<h3 class="font-bold">CBH Clinic</h3>
+</div>
+<p class="text-subtle-light dark:text-subtle-dark">Your partner in women's health and wellness.</p>
+</div>
+<div class="flex flex-col items-start gap-3">
+<h4 class="font-semibold">Contact Us</h4>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary" href="#">123 Health St, Wellness City</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary" href="#">(123) 456-7890</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary" href="#">contact@cbhclinic.com</a>
+</div>
+<div class="flex flex-col items-start gap-3">
+<h4 class="font-semibold">Clinic Hours</h4>
+<p class="text-subtle-light dark:text-subtle-dark">Mon - Fri: 9:00 AM - 5:00 PM</p>
+<p class="text-subtle-light dark:text-subtle-dark">Sat: 9:00 AM - 1:00 PM</p>
+<p class="text-subtle-light dark:text-subtle-dark">Sun: Closed</p>
+</div>
+<div class="flex flex-col items-start gap-3">
+<h4 class="font-semibold">Follow Us</h4>
+<div class="flex gap-4">
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary" data-alt="Facebook Icon" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-subtle-light dark:text-subtle-dark hover:text-primary" data-alt="Twitter Icon" href="#">
+<svg aria-hidden="true" class="h-5 w-5" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-border-light dark:border-border-dark py-4">
+<p class="text-center text-xs text-subtle-light dark:text-subtle-dark">© 2024 CBH Clinic. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ultrasound Services - CBH Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec5b",
+              "background-light": "#f6f8f6",
+              "background-dark": "#102216",
+              "clinic-blue": "#2A6F97",
+              "clinic-green": "#84A98C",
+              "clinic-light-gray": "#F8F9FA",
+              "clinic-dark-gray": "#343A40",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-clinic-light-gray dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 w-full border-b border-gray-200/50 dark:border-gray-800/50">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-4">
+<div class="text-clinic-blue dark:text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-clinic-dark-gray dark:text-white text-xl font-bold">CBH Clinic</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-clinic-dark-gray dark:text-gray-300 hover:text-clinic-blue dark:hover:text-primary text-sm font-medium" href="index.html">Home</a>
+<a class="text-clinic-dark-gray dark:text-gray-300 hover:text-clinic-blue dark:hover:text-primary text-sm font-medium" href="services.html">OB-GYNE Services</a>
+<a class="text-clinic-blue dark:text-primary text-sm font-bold border-b-2 border-clinic-blue dark:border-primary pb-1" href="ultrasound_services.html">Ultrasound Services</a>
+<a class="text-clinic-dark-gray dark:text-gray-300 hover:text-clinic-blue dark:hover:text-primary text-sm font-medium" href="vac_services.html">Vaccination Services</a>
+<a class="text-clinic-dark-gray dark:text-gray-300 hover:text-clinic-blue dark:hover:text-primary text-sm font-medium" href="booking.html">Book Appointment</a>
+</nav>
+<button class="hidden md:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-clinic-blue text-white text-sm font-bold shadow-md hover:bg-clinic-blue/90 transition-colors">
+<span class="truncate">Book an Appointment</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="bg-white dark:bg-background-dark/50 py-20 sm:py-24 lg:py-32">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 @container">
+<div class="flex flex-col md:flex-row items-center gap-12">
+<div class="flex flex-col gap-6 text-center md:text-left md:w-1/2">
+<h1 class="text-clinic-dark-gray dark:text-white text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">Ultrasound Services</h1>
+<h2 class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-lg sm:text-xl">Providing clear, compassionate, and high-quality diagnostic imaging to support your health and well-being.</h2>
+<div class="mt-4 flex justify-center md:justify-start">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-clinic-blue text-white text-base font-bold shadow-lg hover:bg-clinic-blue/90 transition-colors">
+<span class="truncate">Book an Appointment</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl shadow-lg" data-alt="A modern and clean ultrasound machine in a bright clinic room." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhZqsB9zmGu2PEoeeYcimC4BsVI38C5cKVj5uMi23h820jmR-STlTUXoIIeWDqck1td06S7tiAaL4XY7IY-EZyoyc90e2Yv0ovizvrVOG103E6cpifsZBv7tbyCQwXhtwav004bzKWjB95iiRlKS3M2Nbs_miQWYQEiOaRZsbgm5hXxpdTjC6GL_ICX7Lpxf1599Bor5Qms_gTB-G6xz5qlOu3g4iOp11kWCPgJ9PnJ1yS8b7tq-c7bJP30UtMKWQ0SUFfhDwg0AM");'></div>
+</div>
+</div>
+</div>
+</section>
+<!-- BodyText Introduction -->
+<section class="py-16 sm:py-20">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<p class="text-clinic-dark-gray/90 dark:text-gray-300/90 text-base font-normal leading-relaxed text-center">
+                        Ultrasound, also known as sonography, is a safe and painless diagnostic procedure that uses sound waves to create images of the inside of the body. At CBH Clinic, we use state-of-the-art technology to provide crucial insights for obstetrics, gynecology, and general health monitoring.
+                    </p>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 sm:py-20 bg-white dark:bg-background-dark/50">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- SectionHeader -->
+<div class="text-center mb-12">
+<h2 class="text-clinic-dark-gray dark:text-white text-3xl font-bold tracking-tight">Our Ultrasound Services</h2>
+<p class="mt-2 text-clinic-dark-gray/70 dark:text-gray-300/70">Comprehensive care for every stage of life.</p>
+</div>
+<!-- TextGrid for Services -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">body_system</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Whole Abdomen</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    A comprehensive scan of all major abdominal organs, including the liver, gallbladder, spleen, pancreas, and kidneys.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">view_cozy</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Upper/Lower Abdomen</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">Focused examination of either the upper or lower regions of your abdomen for specific concerns.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">water_drop</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">KUB (Kidneys, Ureters &amp; Bladder)</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    A detailed look at the urinary system to detect issues like kidney stones or bladder abnormalities.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">bubble_chart</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">HBT (Hepatobiliary Tree)</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    Specialized imaging of the liver, bile ducts, and gallbladder to assess function and detect blockages.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">male</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Scrotal Ultrasound</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    A diagnostic tool used to examine the testicles and surrounding tissues for lumps, swelling, or pain.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">pulmonology</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Chest Ultrasound</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    An imaging test to check for fluid around the lungs or other abnormalities within the chest cavity.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">female</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Pelvic Ultrasound</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">An examination of the female reproductive organs, including the uterus, ovaries, and bladder.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">search</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Transvaginal/Transrectal</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">An internal ultrasound providing clearer, more detailed images of the pelvic organs.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">child_care</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">Congenital Anomaly Scan</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    A detailed mid-pregnancy scan to check for the healthy development of your baby's organs and structure.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">cardiology</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">OB &amp; Gyne Doppler</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">An advanced ultrasound that assesses blood flow in the umbilical cord, fetus, and placenta.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">view_in_ar</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">3D/4D/5D Ultrasound</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    Advanced imaging that provides lifelike, three-dimensional, and real-time moving images of your baby.
+                                </p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl border border-gray-200/80 dark:border-gray-800/80 bg-clinic-light-gray dark:bg-background-dark p-6 transition-shadow hover:shadow-md">
+<span class="material-symbols-outlined text-clinic-green dark:text-primary text-4xl">science</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-clinic-dark-gray dark:text-white text-lg font-bold">SISH / HSSG</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 text-sm leading-relaxed">
+                                    Specialized procedures to evaluate the uterine cavity and fallopian tubes for infertility investigations.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Preparation Section -->
+<section class="py-16 sm:py-20">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-50 dark:bg-clinic-blue/10 p-8 rounded-xl border border-clinic-blue/20 dark:border-clinic-blue/40">
+<div class="flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-clinic-blue dark:text-primary text-4xl">checklist</span>
+<h3 class="text-clinic-dark-gray dark:text-white text-2xl font-bold">Preparing for Your Appointment</h3>
+<p class="text-clinic-dark-gray/80 dark:text-gray-300/80 leading-relaxed">
+                            To ensure the best possible results from your ultrasound, preparation may be required. This can include fasting or having a full bladder. Please follow the specific instructions provided to you by our staff when you book your appointment. If you have any questions, don't hesitate to call us.
+                        </p>
+</div>
+</div>
+</section>
+<!-- Call-to-Action Section -->
+<section class="py-16 sm:py-24 bg-clinic-green/10 dark:bg-primary/10">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl font-bold tracking-tight text-clinic-dark-gray dark:text-white">Ready to Schedule Your Visit?</h2>
+<p class="mt-4 text-lg text-clinic-dark-gray/80 dark:text-gray-300/80">
+                        Our team is here to provide you with compassionate care. Contact us today to book your appointment.
+                    </p>
+<div class="mt-8 flex justify-center">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-clinic-blue text-white text-base font-bold shadow-lg hover:bg-clinic-blue/90 transition-colors">
+<span class="truncate">Book an Appointment Now</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-gray-200/50 dark:border-gray-800/50">
+<div class="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-sm text-clinic-dark-gray/70 dark:text-gray-400">
+<p>© 2024 CBH Clinic. All Rights Reserved.</p>
+<p class="mt-2">123 Health St, Wellness City, 12345 | (123) 456-7890</p>
+</div>
+</footer>
+</div>
+</body></html>

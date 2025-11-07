@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Appointments - CBH Clinic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#13ec5b",
+              "background-light": "#f6f8f6",
+              "background-dark": "#102216",
+              // Custom colors based on user request
+              "calm-teal": "#65B0B5",
+              "warm-peach": "#F7D9D3",
+              "light-gray-bg": "#F4F7F6",
+              "dark-charcoal-text": "#333333",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-dark-charcoal-text dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-dark-charcoal-text dark:text-white">
+<div class="size-6 text-calm-teal">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-dark-charcoal-text dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">CBH Clinic</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-dark-charcoal-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-calm-teal" href="index.html">Home</a>
+<a class="text-dark-charcoal-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-calm-teal" href="services.html">OB-GYNE Services</a>
+<a class="text-dark-charcoal-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-calm-teal" href="ultrasound_services.html">Ultrasound Services</a>
+<a class="text-dark-charcoal-text dark:text-gray-300 text-sm font-medium leading-normal hover:text-calm-teal" href="vac_services.html">Vaccination Services</a>
+<a class="text-calm-teal text-sm font-bold leading-normal" href="booking.html">Book Appointment</a>
+</div>
+</nav>
+<button class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+<span class="material-symbols-outlined text-dark-charcoal-text dark:text-white">menu</span>
+</button>
+</header>
+<!-- PageHeading -->
+<main class="flex-1">
+<div class="py-10">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3 text-center sm:text-left">
+<h1 class="text-dark-charcoal-text dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Contact &amp; Appointments</h1>
+<p class="text-gray-500 dark:text-gray-400 text-base font-normal leading-normal">We're here to help. Reach out to us directly or book your appointment online.</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-12 lg:grid-cols-2 p-4">
+<!-- Left Column: Contact Info & General Inquiries -->
+<div class="flex flex-col gap-10">
+<!-- Get in Touch Section -->
+<div>
+<h2 class="text-dark-charcoal-text dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Get in Touch</h2>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<div class="grid grid-cols-[auto_1fr] gap-x-4">
+<div class="col-span-2 flex items-center border-b border-b-gray-200 dark:border-b-gray-700 py-4 gap-4">
+<span class="material-symbols-outlined text-calm-teal">call</span>
+<div class="flex flex-col">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">Smart</p>
+<a class="text-dark-charcoal-text dark:text-gray-200 text-sm font-medium" href="tel:09638933717">0963-893-3717</a>
+</div>
+</div>
+<div class="col-span-2 flex items-center border-b border-b-gray-200 dark:border-b-gray-700 py-4 gap-4">
+<span class="material-symbols-outlined text-calm-teal">call</span>
+<div class="flex flex-col">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">Globe</p>
+<a class="text-dark-charcoal-text dark:text-gray-200 text-sm font-medium" href="tel:09667584390">0966-758-4390</a>
+</div>
+</div>
+<div class="col-span-2 flex items-center border-b border-b-gray-200 dark:border-b-gray-700 py-4 gap-4">
+<span class="material-symbols-outlined text-calm-teal">social_leaderboard</span>
+<div class="flex flex-col">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">Facebook</p>
+<a class="text-dark-charcoal-text dark:text-gray-200 text-sm font-medium hover:text-calm-teal" href="#">@drbernabehisanan</a>
+</div>
+</div>
+<div class="col-span-2 flex items-center pt-4 gap-4">
+<span class="material-symbols-outlined text-calm-teal">schedule</span>
+<div class="flex flex-col">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal">Clinic Hours</p>
+<p class="text-dark-charcoal-text dark:text-gray-200 text-sm font-medium">Monday - Friday: 9:00 AM - 5:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- General Inquiries Form -->
+<div>
+<h2 class="text-dark-charcoal-text dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Have a Question?</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Fill out the form below for general inquiries and we will get back to you shortly.</p>
+<form class="space-y-4 bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="name">Name</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-calm-teal focus:ring-calm-teal sm:text-sm" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-calm-teal focus:ring-calm-teal sm:text-sm" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="subject">Subject</label>
+<input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-calm-teal focus:ring-calm-teal sm:text-sm" id="subject" name="subject" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Message</label>
+<textarea class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-calm-teal focus:ring-calm-teal sm:text-sm" id="message" name="message" rows="4"></textarea>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-warm-peach text-dark-charcoal-text text-sm font-bold leading-normal tracking-[0.015em]" type="submit">
+<span class="truncate">Send Message</span>
+</button>
+</form>
+</div>
+</div>
+<!-- Right Column: Appointment Booking -->
+<div class="flex flex-col">
+<h2 class="text-dark-charcoal-text dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Book Your Appointment</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Select a service and choose an available date and time to schedule your visit.</p>
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700 space-y-6">
+<!-- Service Selection -->
+<div>
+<label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">1. Select a Service</label>
+<div class="space-y-3">
+<div class="flex items-center">
+<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="ob-gyne" name="service" type="radio"/>
+<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="ob-gyne">OB-GYNE Consultation</label>
+</div>
+<div class="flex items-center">
+<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="ultrasound" name="service" type="radio"/>
+<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="ultrasound">Ultrasound</label>
+</div>
+<div class="flex items-center">
+<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="vaccination" name="service" type="radio"/>
+<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="vaccination">Vaccination</label>
+</div>
+</div>
+</div>
+<!-- Calendar -->
+<div>
+<label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">2. Choose Date &amp; Time</label>
+<div class="p-4 rounded-lg bg-light-gray-bg dark:bg-gray-800">
+<div class="flex items-center justify-between mb-4">
+<button class="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">chevron_left</span>
+</button>
+<p class="font-semibold text-dark-charcoal-text dark:text-white">May 2024</p>
+<button class="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-sm">
+<div class="text-gray-500 dark:text-gray-400">Su</div>
+<div class="text-gray-500 dark:text-gray-400">Mo</div>
+<div class="text-gray-500 dark:text-gray-400">Tu</div>
+<div class="text-gray-500 dark:text-gray-400">We</div>
+<div class="text-gray-500 dark:text-gray-400">Th</div>
+<div class="text-gray-500 dark:text-gray-400">Fr</div>
+<div class="text-gray-500 dark:text-gray-400">Sa</div>
+<div class="text-gray-400 dark:text-gray-500 py-2">28</div>
+<div class="text-gray-400 dark:text-gray-500 py-2">29</div>
+<div class="text-gray-400 dark:text-gray-500 py-2">30</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">1</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">2</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">3</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">4</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">5</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">6</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">7</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">8</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">9</div>
+<div class="py-2 text-white bg-calm-teal rounded-full cursor-pointer">10</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">11</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">12</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">13</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">14</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">15</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">16</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">17</div>
+<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">18</div>
+</div>
+</div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-calm-teal text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Confirm Appointment</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-gray-200 dark:border-gray-700 py-6 px-4">
+<div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400 gap-4">
+<p>© 2024 CBH Clinic. All rights reserved.</p>
+<div class="flex gap-4">
+<a class="hover:text-calm-teal" href="#">Privacy Policy</a>
+<a class="hover:text-calm-teal" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

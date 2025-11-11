@@ -35,6 +35,27 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
             font-size: 20px;
         }
+    /* Calendly responsive tweaks */
+    .calendly-inline-widget,
+    #calendly-inline > .calendly-inline-widget {
+      display: block;
+      width: 100% !important;
+      max-width: 100% !important;
+      height: min(72vh, 900px) !important;
+      box-sizing: border-box;
+    }
+    /* slightly shorter on small screens */
+    @media (max-width: 640px) {
+      .calendly-inline-widget,
+      #calendly-inline > .calendly-inline-widget {
+        height: min(60vh, 700px) !important;
+      }
+    }
+    .calendly-inline-widget iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: 0;
+    }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-dark-charcoal-text dark:text-gray-200">
@@ -118,7 +139,7 @@
 <div>
 <h2 class="text-dark-charcoal-text dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Have a Question?</h2>
 <p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Fill out the form below for general inquiries and we will get back to you shortly.</p>
-<form class="space-y-4 bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700">
+<form id="contact-form" class="space-y-4 bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700" method="POST">
 <div>
 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="name">Name</label>
 <input class="mt-1 block w-full rounded-lg border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white shadow-sm focus:border-calm-teal focus:ring-calm-teal sm:text-sm" id="name" name="name" type="text"/>
@@ -138,80 +159,23 @@
 <button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-warm-peach text-dark-charcoal-text text-sm font-bold leading-normal tracking-[0.015em]" type="submit">
 <span class="truncate">Send Message</span>
 </button>
+  <div id="contact-status" class="mt-2 text-sm hidden">
+    <p id="contact-success" class="text-green-600 dark:text-green-400 hidden">Thanks — your message has been sent.</p>
+    <p id="contact-error" class="text-red-600 dark:text-red-400 hidden">Sorry — something went wrong. Please try again or email us directly.</p>
+  </div>
 </form>
 </div>
 </div>
-<!-- Right Column: Appointment Booking -->
-<div class="flex flex-col">
-<h2 class="text-dark-charcoal-text dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Book Your Appointment</h2>
-<p class="text-gray-500 dark:text-gray-400 text-sm mb-4">Select a service and choose an available date and time to schedule your visit.</p>
-<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-gray-200 dark:border-gray-700 space-y-6">
-<!-- Service Selection -->
-<div>
-<label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">1. Select a Service</label>
-<div class="space-y-3">
-<div class="flex items-center">
-<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="ob-gyne" name="service" type="radio"/>
-<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="ob-gyne">OB-GYNE Consultation</label>
+<!-- Calendly inline widget container -->
+<div id="calendly-inline" class="mt-4">
+  <!-- Inline widget will render here -->
 </div>
-<div class="flex items-center">
-<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="ultrasound" name="service" type="radio"/>
-<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="ultrasound">Ultrasound</label>
+
+<!-- Visible popup trigger for Calendly -->
+<div class="mt-4 flex justify-center">
+  <button id="calendly-popup-btn" class="px-6 py-2 rounded-full bg-calm-teal text-white font-bold hover:bg-calm-teal/90">Book with Calendly</button>
 </div>
-<div class="flex items-center">
-<input class="focus:ring-calm-teal h-4 w-4 text-calm-teal border-gray-300" id="vaccination" name="service" type="radio"/>
-<label class="ml-3 block text-sm font-medium text-gray-700 dark:text-gray-200" for="vaccination">Vaccination</label>
-</div>
-</div>
-</div>
-<!-- Calendar -->
-<div>
-<label class="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2">2. Choose Date &amp; Time</label>
-<div class="p-4 rounded-lg bg-light-gray-bg dark:bg-gray-800">
-<div class="flex items-center justify-between mb-4">
-<button class="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">chevron_left</span>
-</button>
-<p class="font-semibold text-dark-charcoal-text dark:text-white">May 2024</p>
-<button class="p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
-<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">chevron_right</span>
-</button>
-</div>
-<div class="grid grid-cols-7 gap-1 text-center text-sm">
-<div class="text-gray-500 dark:text-gray-400">Su</div>
-<div class="text-gray-500 dark:text-gray-400">Mo</div>
-<div class="text-gray-500 dark:text-gray-400">Tu</div>
-<div class="text-gray-500 dark:text-gray-400">We</div>
-<div class="text-gray-500 dark:text-gray-400">Th</div>
-<div class="text-gray-500 dark:text-gray-400">Fr</div>
-<div class="text-gray-500 dark:text-gray-400">Sa</div>
-<div class="text-gray-400 dark:text-gray-500 py-2">28</div>
-<div class="text-gray-400 dark:text-gray-500 py-2">29</div>
-<div class="text-gray-400 dark:text-gray-500 py-2">30</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">1</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">2</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">3</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">4</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">5</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">6</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">7</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">8</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">9</div>
-<div class="py-2 text-white bg-calm-teal rounded-full cursor-pointer">10</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">11</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">12</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">13</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">14</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">15</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">16</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">17</div>
-<div class="py-2 cursor-pointer rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">18</div>
-</div>
-</div>
-</div>
-<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-calm-teal text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Confirm Appointment</span>
-</button>
+
 </div>
 </div>
 </div>
@@ -231,4 +195,154 @@
 </div>
 </div>
 </div>
+
+<!-- Calendly widget - popup & inline -->
+<!-- Replace the placeholder URL below with your actual Calendly link (e.g. https://calendly.com/your-username/event) -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+  (function(){
+    // Placeholder Calendly URL - change this to your scheduling page
+    var CALENDLY_URL = 'https://calendly.com/cirilia052097/30min';
+
+    // Open Calendly popup when popup button clicked
+    function openCalendlyPopup() {
+      if (window.Calendly && Calendly.showPopupWidget) {
+        Calendly.showPopupWidget(CALENDLY_URL);
+      } else {
+        // Fallback: open in new tab
+        window.open(CALENDLY_URL, '_blank');
+      }
+    }
+
+    // Initialize inline widget inside #calendly-inline
+    function loadCalendlyInline() {
+      var container = document.getElementById('calendly-inline');
+      if (!container) return;
+      // Clear any placeholder
+      container.innerHTML = '';
+      var link = document.createElement('div');
+  link.setAttribute('class', 'calendly-inline-widget');
+  link.setAttribute('data-url', CALENDLY_URL);
+      container.appendChild(link);
+      // If Calendly is loaded, initialize the embed
+      if (window.Calendly && Calendly.initInlineWidget) {
+        Calendly.initInlineWidget({ url: CALENDLY_URL, parentElement: link });
+      }
+    }
+
+    // Wait for the Calendly script to load, then initialize inline widget
+    function onCalendlyReady(fn) {
+      if (window.Calendly) return fn();
+      var script = document.querySelector('script[src*="calendly.com/assets/external/widget.js"]');
+      if (script) {
+        script.addEventListener('load', fn);
+      } else {
+        fn();
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      // Wire the popup button
+      var btn = document.getElementById('calendly-popup-btn');
+      if (btn) btn.addEventListener('click', openCalendlyPopup);
+
+      // Also wire the site-wide Book Now buttons if present
+      var bookBtns = document.querySelectorAll('button, a');
+      bookBtns.forEach(function(el){
+        if (el.textContent && /book/i.test(el.textContent) && el.id !== 'calendly-popup-btn') {
+          el.addEventListener('click', function(e){
+            // prevent default for anchor links
+            if (el.tagName.toLowerCase() === 'a') e.preventDefault();
+            openCalendlyPopup();
+          });
+        }
+      });
+
+      onCalendlyReady(loadCalendlyInline);
+    });
+  })();
+</script>
+
+    <!-- Contact form submission handler -->
+    <script>
+      (function(){
+        // Replace with your Formspree endpoint (example: https://formspree.io/f/xxxxxxxx)
+        var FORMSPREE_ENDPOINT = 'https://formspree.io/f/meovqvrz';
+
+        function showStatus(success, message) {
+          var s = document.getElementById('contact-status');
+          var ok = document.getElementById('contact-success');
+          var err = document.getElementById('contact-error');
+          if (!s || !ok || !err) return;
+          s.classList.remove('hidden');
+          if (success) {
+            ok.textContent = message || 'Thanks — your message has been sent.';
+            ok.classList.remove('hidden');
+            err.classList.add('hidden');
+          } else {
+            err.textContent = message || 'Sorry — something went wrong. Please try again or email us directly.';
+            err.classList.remove('hidden');
+            ok.classList.add('hidden');
+          }
+        }
+
+        function validateEmail(email) {
+          return /\S+@\S+\.\S+/.test(email);
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+          var form = document.getElementById('contact-form');
+          if (!form) return;
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var subject = document.getElementById('subject').value.trim();
+            var message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+              showStatus(false, 'Please fill in your name, email and message.');
+              return;
+            }
+            if (!validateEmail(email)) {
+              showStatus(false, 'Please provide a valid email address.');
+              return;
+            }
+
+            // If Formspree endpoint not configured, fallback to mailto
+            if (FORMSPREE_ENDPOINT.indexOf('your-form-id') !== -1) {
+              // Open mail client as fallback
+              var mailto = 'mailto:you@example.com'
+                + '?subject=' + encodeURIComponent(subject || 'Website Inquiry')
+                + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+              window.location.href = mailto;
+              showStatus(true, 'Opening your email client...');
+              return;
+            }
+
+            // Submit to Formspree
+            fetch(FORMSPREE_ENDPOINT, {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: new FormData(form)
+            }).then(function(response){
+              if (response.ok) {
+                showStatus(true, 'Thanks — we received your message.');
+                form.reset();
+              } else {
+                response.json().then(function(data){
+                  showStatus(false, (data && data.error) ? data.error : null);
+                }).catch(function(){
+                  showStatus(false);
+                });
+              }
+            }).catch(function(){
+              showStatus(false);
+            });
+          });
+        });
+      })();
+    </script>
+
 </body></html>
